@@ -44,10 +44,10 @@
         <i class="fa fa-remove"></i>
     </a>
     <h4 class="w3-bar-item"><b>Menu</b></h4>
-    <a class="w3-bar-item w3-button w3-hover-black" href="/forbrugere">Forbrugere</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#">Virksomheder</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#">Organisationer</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#">Hvis du vil vide mere</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="/forbrugerne">Forbrugerne</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="/virksomhed">Virksomheder</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="/organisation">Organisationer</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="/andet">Hvis du vil vide mere</a>
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -153,16 +153,54 @@
             <a class="w3-button w3-hover-black" href="#">»</a>
         </div>
     </div>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
 
-    <footer id="myFooter">
-        <div class="w3-container w3-theme-l2 w3-padding-32">
-            <h4>Footer</h4>
-        </div>
+            /* Create three equal columns that floats next to each other */
+            .column {
+                float: left;
+                width: 33.33%;
+                padding: 10px;
+                height: 300px; /* Should be removed. Only for demonstration */
+            }
 
-        <div class="w3-container w3-theme-l1">
-            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+
+    <h2>Three Equal Columns</h2>
+
+    <div class="row">
+        <div class="column" style="background-color:#aaa;">
+            <h2>Column 1</h2>
+            <p>Some text..</p>
         </div>
-    </footer>
+        <div class="column" style="background-color:#bbb;">
+            <h2>Column 2</h2>
+            <p>Some text..</p>
+        </div>
+        <div class="column" style="background-color:#ccc;">
+            <h2>Column 3</h2>
+            <p>Some text..</p>
+        </div>
+    </div>
+
+    </body>
+
+
+
+
+
 
     <!-- END MAIN -->
 </div>

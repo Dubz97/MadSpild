@@ -2,6 +2,7 @@ package com.example.madspild.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
@@ -12,7 +13,7 @@ public class MyController {
     }
 
     @GetMapping("/forbrugerne")
-    public String forbrugere() {
+    public String forbrugerne() {
         return "forbrugerne.html";
     }
 
@@ -33,4 +34,8 @@ public class MyController {
     public String andet() {
         return "andet";
     }
-}
+    @GetMapping("/madplan")
+    public String pushButton(@RequestParam String mad) {
+        return mad + "" ;}
+    }
+
