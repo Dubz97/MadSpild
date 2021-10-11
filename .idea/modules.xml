@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/MadSpild-main.iml" filepath="$PROJECT_DIR$/.idea/MadSpild-main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MadSpild-main/Madspild/Madspild.iml" filepath="$PROJECT_DIR$/MadSpild-main/Madspild/Madspild.iml" />
+    </modules>
+  </component>
+</project>
