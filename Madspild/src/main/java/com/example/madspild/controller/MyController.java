@@ -13,9 +13,9 @@ public class MyController {
     return "index";
   }
 
-  @GetMapping("/forbrugere")
+  @GetMapping("/forbrugerne")
   public String forbrugere() {
-    return "forbrugere";
+    return "forbrugerne";
   }
 
   @GetMapping("/virksomhed")

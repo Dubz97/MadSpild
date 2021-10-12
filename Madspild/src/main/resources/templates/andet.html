@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
 <style>
     html, body, h1, h2, h3, h4, h5, h6 {
         font-family: "Roboto", sans-serif;
@@ -44,9 +45,9 @@
     </a>
     <h4 class="w3-bar-item"><b>Menu</b></h4>
     <a class="w3-bar-item w3-button w3-hover-black" href="/">Startside</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#">Forbrugere</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#">Virksomheder</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#">Organisationer</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="/forbrugerne">Forbrugerne</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="/virksomhed">Virksomheder</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="/organisation">Organisationer</a>
     <a class="w3-bar-item w3-button w3-hover-black" href="/andet">Hvis du vil vide mere</a>
 </nav>
 
@@ -60,7 +61,16 @@
     <div class="w3-row w3-padding-64">
         <div class="w3-twothird w3-container">
             <h1 class="w3-text-teal">Reference Links</h1>
-            <a href="https://www.foedevarestyrelsen.dk/Leksikon/Sider/Madspild.aspx">Startside tekst</a>
+            <a href="https://www.foedevarestyrelsen.dk/Leksikon/Sider/Madspild.aspx">
+                https://www.foedevarestyrelsen.dk/Leksikon/Sider/Madspild.aspx</a>
+            </br>
+            <a href="https://www.stopspildafmad.dk/">https://www.stopspildafmad.dk/</a></br>
+            <a href="https://altomkost.dk/fakta/madspild/">https://altomkost.dk/fakta/madspild/</a></br>
+            <a href="https://www.greenmatch.dk/blog/2016/08/5-apps-der-er-med-til-at-reducere-madspild">
+                https://www.greenmatch.dk/blog/2016/08/5-apps-der-er-med-til-at-reducere-madspild
+            </a></br>
+            <a href="https://taenk.dk/test-og-forbrugerliv/mad-og-indkoeb/madspild">
+                https://taenk.dk/test-og-forbrugerliv/mad-og-indkoeb/madspild</a>
         </div>
         <div class="w3-third w3-container">
             <picture>
@@ -97,13 +107,56 @@
     </div>
 
 
-    <footer id="myFooter">
-        <div class="w3-container w3-theme-l2 w3-padding-32">
+    <footer>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+                * {
+                    box-sizing: border-box;
+                }
 
-            <h6>Lavet af: Christoffer P, Christopher Samsing</h6>
-        </div>
+                /* Create three equal columns that floats next to each other */
+                .column {
+                    float: left;
+                    width: 33.33%;
+                    padding: 10px;
+                    height: 200px; /* Should be removed. Only for demonstration */
+                }
 
-        <div class="w3-container w3-theme-l1">
+                /* Clear floats after the columns */
+                .row:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+            </style>
+        </head>
+
+
+        <div class="row">
+            <div class="column" style="background-color:#aaa;">
+                <h2>Adresse</h2>
+                <p>Eksempelvej 123</br>
+                    2610 Rødovre</p>
+            </div>
+
+            <div class="column" style="background-color:#aaa;">
+                <h2>Kontakt</h2>
+                <p>Kontakt os på mail:</br>
+                    <a href = "mailto:eksempel@mail.dk">eksempel@mail.dk</a>
+                </p>
+            </div>
+
+            <div class="column" style="background-color:#aaa;">
+                <h2>Sociale medier</h2>
+                <p>Følg os på disse medier:</br>
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a></br>
+                    <a href="https://twitter.com/" class="fa fa-twitter"></a></br>
+                    <a href="https://github.com/Dubz97/MadSpild" class="fa fa-github"></a>
+
+                </p>
+            </div>
+
         </div>
     </footer>
 
